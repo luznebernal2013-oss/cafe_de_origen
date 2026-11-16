@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f2f4f8;
+    color: #333;
+
+}
+.mensaje{
+    margin:0;
+    padding:10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+}
+
+.mensaje::after{
+    content: "Version Celular < 764px"
+
+}
+
+.encabezado{
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+
+.logo{
+    margin-bottom: 10px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    background-color: royalblue;
+    padding: 12px;
+    border-radius: 6px;
+
+}
+
+.contenido{
+    padding: 20px;
+
+    
+}
+.contenido h2{
+
+
+    text-align: center;
+    color: darkblue;
+    font-size: 1.5rem;
+
+}
+
+
+.seccion-titulo{
+    text-align: center;
+    color: darkblue;
+    font-size: 1.5rem;
+}
+
+.destinos{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.intro{
+    text-align: center;
+    max-width: 700 px;
+    margin: 10px auto;
+
+}
+
+.tarjeta{
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 2px 6px black;
+    padding: 10px;
+    
+}
+
+
+.imagen{
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10 px;
+    object-fit: cover;
+
+}
+
+.boton{ 
+    width: 100%;
+    padding: 10 px;
+    border: none;
+    border-radius: 6px;
+    background-color: darkblue;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+a.boton {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+
+}
+
+.foto{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba (0, 0, 0, 0.3);
+    aspect-ratio: 1/1;
+    object-fit: cover;
+
+}
+
+.foto:hover{
+    transform: scale(1.05);
+
+}
+
+
+
+@media(min-width:768px){
+    .mensaje{
+        background-color: orange;
+    }
+    .mensaje::after{
+        content:"Version Tablet: 768px a 1023px";
+
+    }
+    h1{
+        font-size: 2rem;
+    }
+
+    .menu{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .destinos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .menu a{
+    width: 120px;
+
+    }
+    .seccion-titulo{
+        font-size: 2rem;
+    }
+    .logo{
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .mensaje{
+        background-color: green;
+    }
+
+    .mensaje::after{
+        content: "Version Escritorio >= 1024";
+
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+        .menu{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .destinos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .menu a{
+    width: 150px;
+
+    }
+    .seccion-titulo{
+        font-size: 2.5rem;
+    }
+    .logo{
+        font-size: 3rem;
+    }
+
+}
+
