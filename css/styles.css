@@ -159,8 +159,11 @@ padding: 1rem 1.25rem 1.5rem;
 }
 
 .footer {
-    background-color: #2b1d1a; color: #f7f1e8;
-    text-align: center; padding: 1.5rem 0; font-size: 0.875rem;
+    background-color: #2b1d1a; 
+    color: #f7f1e8;
+    text-align: center; 
+    padding: 1.5rem 0; 
+    font-size: 0.875rem;
 }
 
 /* ===== PASO 12: Tablet (768px en adelante) ===== */ @media (min-width: 768px) {
