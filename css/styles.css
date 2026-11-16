@@ -162,3 +162,50 @@ padding: 1rem 1.25rem 1.5rem;
     background-color: #2b1d1a; color: #f7f1e8;
     text-align: center; padding: 1.5rem 0; font-size: 0.875rem;
 }
+
+/* ===== PASO 12: Tablet (768px en adelante) ===== */ @media (min-width: 768px) {
+.header_contenido { 
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav_lista {
+    flex-direction: row; 
+    gap: 0.25rem;
+}
+.nav_lista a {
+    padding: 0.5rem 0.75rem;
+}
+.hero h1 {
+    font-size: 2.5rem;
+}
+.tarjetas {
+    grid-template-columns: repeat(2, 1fr);
+}
+.contacto_grid { 
+    flex-direction: row;
+}
+
+.contacto_bloque { 
+    flex: 1;
+}
+}
+
+/* ===== PASO 13: Escritorio (1024px en adelante) ===== */ 
+@media (min-width: 1024px) {
+
+.hero {
+    padding: 5rem 0;
+}
+
+.hero_contenido {
+    grid-template-columns: 1fr 1fr; align-items: center;
+}
+.hero h1 {
+    font-size: 3rem;
+}
+
+.tarjetas {
+    grid-template-columns: repeat(3, 1fr);
+
+}
+}
